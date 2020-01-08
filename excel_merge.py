@@ -22,10 +22,8 @@ target_path = r'C:\Users\ibn_k\Documents\Excels'
 
 # create empty list for excel files.
 
-excel_files = []
 
-for file in Path(excel_path).glob('*.xlsx'):
-    excel_files.append(file)
+excel_files = [file for file in Path(excel_path).glob('*.xlsx')]
 
 
 # if you want to check your files un comment the following code
