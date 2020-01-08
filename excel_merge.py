@@ -14,11 +14,11 @@ error handling added.
 """
 
 
-excel_path = r'C:\Users\ibn_k\Documents\Excels' # add your excel path r string added for Windows users.
+excel_path = r'' # add your excel path r string added for Windows users.
 
 sheet_name = 'Sheet1' # add in your sheet name 
 
-target_path = r'C:\Users\ibn_k\Documents\Excels'
+target_path = r''
 
 # create empty list for excel files.
 
