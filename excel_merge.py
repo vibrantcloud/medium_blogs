@@ -51,7 +51,7 @@ for file in excel_files:
         print(f"{err} in {file.name}, skipping")
         
 try:
-    final_dataframe = pd.concat(excel_dataframe)
+    final_dataframe = pd.concat(excel_dataframe,axis=1)
     final_dataframe.to_excel(target_path + '\master_file.xlsx',index=False)
     
     print(f"File Saved to {target_path}")
