@@ -44,6 +44,8 @@ excel_dataframe = []
 for file in excel_files:
     try:
         df = pd.read_excel(file,sheet_name=sheet_name)
+        df.columns = df.columns.str.lower() # lowercase all columns
+        df.columns = df.columns.str.strip() # remove any trailing or leading white space.
         excel_dataframe.append(df)
     except XLRDError as err:
         print(f"{err} in {file.name}, skipping")
